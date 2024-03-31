@@ -11,16 +11,19 @@ function adicionarTarefa() {
         const checkbox = document.createElement('input')
         checkbox.type = 'checkbox'
 
-        const button = document.createElement('input') 
+        const button = document.createElement('input')
         button.type = 'button'
-        button.value = 'delete'
+        button.value = 'delete' 
+       
 
-        const novoItem = document.getElementById('li')
-        novoItem.innerHTML = `${valorInput} ${button}`
+        const novoItem = document.createElement('li')
+        novoItem.innerHTML = `${valorInput}`
 
-        res.appendChild(checkbox)
-        res.appendChild(novoItem) 
-        res.appendChild(button)
+        res.appendChild(checkbox)      
+        res.appendChild(novoItem)
+        res.appendChild(button) 
+       
+
 
 
         button.addEventListener('click', () => {
@@ -35,21 +38,7 @@ function adicionarTarefa() {
                
             }
 
-        }) 
-        
-        
-
-   
-
-        
-
+        })     
     }
-    
-    
 
-
-
-    
-    
-    
 }
